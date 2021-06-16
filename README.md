@@ -19,10 +19,27 @@ in Toronto, it is a great idea to open one, but the great question is where to o
 and find out which ones would be a great choice to open an Indian Restaurant.
 
 # Target Audience
+The target audience for this project is people who are looking to open an Indian Restaurant in Toronto, developers who are interested in machine learning with python,
+and people living in Toronto and looking for Indian Restaurants.
 
 # Data Sources
+For this project I used data from three different sources:
+1. Wikipedia: I used Wikipedia to web scrape a list of Toronto's boroughs, neighborhoods and postal codes.
+2. Coursera: Coursera provided me a CSV that contains the geographical coordinates for each neighborhood in Toronto.
+3. Foursquare: I used Foursquare to obtain near venues for each neighborhood in Toronto.
 
 # Methodology
+In this project I used data science techniques such as:
+- Web scraping
+- Data transforming
+- K-mean clustering
+- Data visualization
+- Data cleaning
+
+During the entire project, the following conditions were taken into account:
+1. Only process the cells that have an assigned borough. Ignore cells with a borough that is Not assigned.
+2. More than one neighborhood can exist in one postal code area. For example, in the table on the Wikipedia page, you will notice that M5A is listed twice and has two neighborhoods: Harbourfront and Regent Park. These two rows will be combined into one row with the neighborhoods separated with a comma as shown in row 11 in the above table.
+3. If a cell has a borough but a Not assigned neighborhood, then the neighborhood will be the same as the borough.
 
 # Results
 
