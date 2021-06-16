@@ -79,7 +79,10 @@ Finally, I created a Pandas dataframe for each cluster based on how many Indian 
 ![Clusters graph](img/img8.PNG "Clusters graph")
 
 # Results
+We can see that cluster 2 has the highest amount of Indian Restaurants, followed by cluster 4, cluster 3, and finally cluster 1. Based on my hypothesis I would safely assume that the best cluster to open an Indian Restaurant is cluster 1 since it contains the most amount of neighborhoods and the less amount of Indian Restaurants. Theoretically, an Indian Restaurant in cluster 1 would have less competition and more demand than any other cluster.
 
 # Discussion
+Based on the results on this project I can say that Python is a great tool for manipulating data. It is very useful to visualize the results of this project, even if I never go to Toronto, there is a great chance that I will be using this skills in the future. I would definitely recommend entrepreneurs to use this approach to identify potential locations to open any type of venue in any part of the world.
 
 # Conclusion
+I really enjoyed this course and learned a lot. Even though this is no bachelors degree, I can definitely demonstrate to any employer the skills I got from this course, which at the end of the day is what matters the most. I hope my project helps any other self proclaimed Data Scientists :). glhf.
