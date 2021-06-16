@@ -41,6 +41,43 @@ During the entire project, the following conditions were taken into account:
 2. More than one neighborhood can exist in one postal code area. For example, in the table on the Wikipedia page, you will notice that M5A is listed twice and has two neighborhoods: Harbourfront and Regent Park. These two rows will be combined into one row with the neighborhoods separated with a comma as shown in row 11 in the above table.
 3. If a cell has a borough but a Not assigned neighborhood, then the neighborhood will be the same as the borough.
 
+After installing all required libraries for the project, I started by web scraping wikipedia to obtain Toronto's boroughs, neighborhoods and postal codes. For this
+process I used BeautifulSoup, a great tool for web scraping. I created a Pandas dataframe with the information I got.
+
+![Toronto's neighborhoods dataframe](img/img1.PNG "Toronto's neighborhoods dataframe")
+
+To visualize this data in a map I needed the coordinates for each neighborhood, for which I used a CSV that Coursera provided. I created a separate dataframe with the
+geocoordinates and the merged both dataframes into a single one.
+
+![Toronto's neighborhoods dataframe with coordinates](img/img2.PNG "Toronto's neighborhoods dataframe with coordinates")
+
+With this dataframe it was possible for me to create a map with a marker for each neighborhood in Toronto. For this process I used Folium, a great tool for visualizing 
+geo-spatial data.
+
+![Folium map with neighborhoods](img/img3.PNG "Folium map with neighborhoods")
+
+I then decided to use Foursquare's API to obtain a list of venues in Toronto. These venues include schools, restaurants, parks, shops, etc. After obtaining this information
+from Foursquare I created a Pandas dataframe to store it.
+
+![Venues dataframe](img/img4.PNG "Venues dataframe")
+
+Since I am only interested in Indian Restaurants, I used a process called K-mean clustering to classify the neighborhoods based on how many Indian Restaurants were present in 
+each one of them. To obtain the K-value I decided to use the Elbow Method:
+
+![Obtaining k-value](img/img5.PNG "Obtaining k-value")
+
+Which resulted in the following graph:
+
+![K-value graph](img/img6.PNG "K-value graph")
+
+Based on the results, the best value of K is **4**, this means that I should classify the data into 4 different clusters. After classifying each neighborhood into a cluster, I created a Folium map to visualize the results.
+
+![Clusters map](img/img7.PNG "Clusters map")
+
+Finally, I created a Pandas dataframe for each cluster based on how many Indian Restauran are present. After doing this, I was able to visualize the average number of Indian Restaurants by clusters.
+
+![Clusters graph](img/img8.PNG "Clusters graph")
+
 # Results
 
 # Discussion
