@@ -1,4 +1,4 @@
-![Toronto](img/toronto.jpg "Toronto")
+![Toronto](img/toronto2.jpg "Toronto")
 # Coursera Capstone Project: The Battle of Neighborhoods
 This github repository is part of the capstone project in order to obtain the IBM Data Science Professional Certificate. 
 The purpose of this repository is to store the jupyter notebook and other files related to this capstone project. I will use this readme file
